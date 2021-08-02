@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact form</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+
+<!-- <script>
+
+function myfunction() {
+        var fname = document.forms["myForm"]["fname"];
+		var lname = document.forms["myForm"]["lname"];
+        var email = document.forms["myForm"]["email"];
+        var phone = document.forms["myForm"]["Telephone"];
+
+        var address = document.forms["myForm"]["Address"];
+  
+        if (fname.value == "") {
+            window.alert("Please enter your name.");
+            fname.focus();
+            return false;
+        }
+  
+		if (lname.value == "") {
+            window.alert("Please enter your name.");
+            lname.focus();
+            return false;
+        }
+  
+  
+        if (address.value == "") {
+            window.alert("Please enter your address.");
+            address.focus();
+            return false;
+        }
+  
+        if (email.value == "") {
+            window.alert(
+              "Please enter a valid e-mail address.");
+            email.focus();
+            return false;
+        }
+  
+        if (phone.value == "") {
+            window.alert(
+              "Please enter your telephone number.");
+            phone.focus();
+            return false;
+        }
+  
+  
+        if (what.selectedIndex < 1) {
+            alert("Please enter your course.");
+            what.focus();
+            return false;
+        }
+  
+        return true;
+    }
+	</script> -->
+
+</head>
+
+
+<body>
+  
+    <div class="container">
+    <div class="title">Enter User Informations </div>
+    <div class="content">
+        <form id="form">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name </span>
+                    <input type="text" id="fname" name="fname" placeholder="Type First Name here"><br>
+                    <small class="errorMessageHide">Error</small>
+                </div>
+                
+                    
+                <div class="input-box">
+                    <span class="details">Email Address </span>
+                    <input type="email" id="email" name="email" placeholder="Type Email Address here"><br>
+                    <small class="errorMessageHide">Error</small>
+                </div>
+                   
+                <div class="input-box">
+                    <span class="details">Last Name </span>
+                    <input type="text" id="lname" name="lname" placeholder="Type Last Name here"><br>
+                    <small class="errorMessageHide">Error</small>
+                </div>
+                       
+                <div class="Udetails">
+                    <input type="radio" checked name="s" id="dot-1">
+                    <input type="radio" name="s" id="dot-2">
+                    <input type="radio" name="s" id="dot-3">
+                    <span class="U-title">User Type</span>
+                    <div class="category">
+                        <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="U-details">School</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="U-details">University</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="U-details">Empolyee</span>
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                        
+                <div class="input-box">
+                    <span class="details">Contact Number </span>
+                    <input  type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="Type Contact Number here"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+                    <lable>Format: 123-456-7890</lable><br>
+                    <small class="errorMessageHide">Error</small>
+                </div>
+								
+					
+          
+                <div class="ui selection dropdown">   
+                    <span class="Cdetails">Payment Type </span>
+                    <select class="ui dropdown">
+                            <option value="Full payment"> Full Payment
+                            </option>
+                            <option value="half payment"> Half Payment
+                            </option>
+                    </select>
+                    <br>
+                </div>
+                       
+                <div class="input-box">
+                    <span class="details">Address </span>
+                    <textarea   cols="39" 
+                                rows="6"
+                                class="textarea"
+                                id="address" 
+                                placeholder="Type User Address here"></textarea><br>
+                    <small class="errorMessageHide">Error</small>
+                </div>
+                
+                  
+                    
+                    
+                    
+                  
+                    <div class="button">
+                    <div id="centerbuttons">
+                  <br><br><br><br><br><br>
+                       <div class="submit Wrapper">          
+                        <!-- <input type = "button"  value = "Submit"  >  -->
+                        <button class="submit Wrapper">Submit</button>
+                   </div>
+                    </div>
+                    
+               
+            </form>
+            </div>
+    </div>
+    </div>
+</body>
+
+<script type = "text/javascript" src="from_Validation.js"></script>  
+
+</html>
+
